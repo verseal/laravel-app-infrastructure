@@ -76,7 +76,7 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 - cp .env.example .env
 - cp application.env.example application.env
 - (modify .env and application.env)
-- - docker-compose up -d
+- docker-compose up -d
 
 - docker exec -ti {COMPOSE_PROJECT_NAME}.php-fpm bash - go inside php-fpm container
 - php artisan migrate:fresh --seed                    - run the migrations and seeds to add data to the table  (users, migrations)
