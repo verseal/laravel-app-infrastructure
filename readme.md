@@ -72,12 +72,12 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## After cloning repo
-cd ./_docker-infrastructure
-cp .env.example .env
-cp application.env.example application.env
-(modify .env and application.env)
-docker-compose up -d
+- cd ./_docker-infrastructure
+- cp .env.example .env
+- cp application.env.example application.env
+- (modify .env and application.env)
+- - docker-compose up -d
 
-docker exec -ti {COMPOSE_PROJECT_NAME}.php-fpm bash - go inside php-fpm container
-php artisan migrate:fresh --seed                    - run the migrations and seeds to add data to the table  (users, migrations)
-php artisan make:auth                               - Scaffold basic login and registration views and routes
+- docker exec -ti {COMPOSE_PROJECT_NAME}.php-fpm bash - go inside php-fpm container
+- php artisan migrate:fresh --seed                    - run the migrations and seeds to add data to the table  (users, migrations)
+- php artisan make:auth                               - Scaffold basic login and registration views and routes
