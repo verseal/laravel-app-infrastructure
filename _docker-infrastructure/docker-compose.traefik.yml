@@ -30,3 +30,6 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
       - ./docker/traefik/traefik.toml:/etc/traefik/traefik.toml
       - ./docker/traefik/acme.json:/acme.json
+    environment:
+        - CF_API_EMAIL=${CF_API_EMAIL}
+        - CF_API_KEY=${CF_API_KEY}
